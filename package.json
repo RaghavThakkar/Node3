@@ -1,0 +1,14 @@
+{
+  "name": "comp229-m2021-week2",
+  "version": "0.0.1",
+  "description": "week 2",
+  "main": "index.js",
+  "author": "Raghav Thakkar",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^15.3.0"
+  }
+}
