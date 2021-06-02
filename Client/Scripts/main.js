@@ -1,27 +1,23 @@
-
-
 var ready = (callback) => {
   if (document.readyState != "loading") callback();
   else document.addEventListener("DOMContentLoaded", callback);
 };
 
-
-
 ready(() => {
-    var url=window.location.href;
-    console.log(url);
-    if(url.includes('aboutus')){
-        document.getElementById('aboutus').classList.add('active');
-    }else if(url.includes('projects')){
-        document.getElementById('projects').classList.add('active');
-    }else if(url.includes('services')){
-        document.getElementById('services').classList.add('active');
-    }else if(url.includes('contact')){
-        document.getElementById('contact').classList.add('active');
-    }else{
-        document.getElementById('home').classList.add('active'); 
-    }
- 
+  document.querySelector(".header").style.height = window.innerHeight + "px";
+  var url=window.location.href;
+  console.log(url);
+  if(url.includes('aboutus')){
+      document.getElementById('aboutus').classList.add('active');
+  }else if(url.includes('projects')){
+      document.getElementById('projects').classList.add('active');
+  }else if(url.includes('services')){
+      document.getElementById('services').classList.add('active');
+  }else if(url.includes('contact')){
+      document.getElementById('contact').classList.add('active');
+  }else{
+      document.getElementById('home').classList.add('active'); 
+  }
 });
 
 var TxtType = function (el, toRotate, period) {

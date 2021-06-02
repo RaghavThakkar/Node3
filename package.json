@@ -1,9 +1,13 @@
 {
-  "name": "week3",
-  "version": "0.0.0",
+  "name": "comp-229-summer2021-week3",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node index.js"
+  },
+  "engines": {
+    "node": "^14.00.0",
+    "npm": "^7.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -29,5 +33,17 @@
     "@types/morgan": "^1.9.2",
     "@types/node": "^15.6.1",
     "@types/typed.js": "^2.0.9"
-  }
+  },
+  "description": "\"week 3\"",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghavThakkar/Node3.git"
+  },
+  "author": "Raghav Thakkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaghavThakkar/Node3/issues"
+  },
+  "homepage": "https://github.com/RaghavThakkar/Node3#readme"
 }
