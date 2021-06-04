@@ -1,85 +1,37 @@
 <%- include('header.ejs') %>
     	<div class="description2" style="align-content: center;">
 		<!--Section: Contact v.2-->
-<section class="mb-4">
-
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center text-light my-4">Contact us</h2>
-    <!--Section description-->
-     <p class="text-center w-responsive mx-auto mb-5 text-light">Do you have any questions? Please do not hesitate to contact us directly. </p>
-
-    <div class="row">
-
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="/home" method="get">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="text-light">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="text-light">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="text-light">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message" class="text-light">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
- </br>
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-
-        <!--Grid column-->
-        
-        <!--Grid column-->
-
+    <h1>Contact</h1>
+<form   action="/home" method="get">
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="lastname">First Name</label>
+      <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+    </div>
+    <div class="form-group col-auto">
+      <label for="firstname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Last Name"  required>
+    </div>
+     <div class="form-group col-auto">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email"  required>
+    </div>
+      <div class="form-group col-auto">
+      <label for="contactNumber">Contact Number</label>
+      <input type="text" class="form-control" id="number" placeholder="Contact Number"  required>
     </div>
 
-</section>
+  <div class="md-form">
+  <i class="fas fa-pencil-alt prefix"></i>
+  <textarea id="form10" class="md-textarea form-control" rows="3" placeholder="Message"  required></textarea>
+
+</div>
+  </div>
+
+  
+  </br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 
 			</div>
     <%- include('footer.ejs') %>

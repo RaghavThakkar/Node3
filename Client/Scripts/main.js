@@ -1,4 +1,4 @@
-/* Raghav Thakkar 301150074 4-June-2021*/
+
 
 var ready = (callback) => {
   if (document.readyState != "loading") callback();
