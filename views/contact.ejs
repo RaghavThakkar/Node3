@@ -1,37 +1,48 @@
-<%- include('header.ejs') %>
-    	<div class="description2" style="align-content: center;">
-		<!--Section: Contact v.2-->
-    <h1>Contact</h1>
-<form   action="/home" method="get">
-  <div class="form-row">
-    <div class="form-group col-auto">
-      <label for="lastname">First Name</label>
-      <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
-    </div>
-    <div class="form-group col-auto">
-      <label for="firstname">Last Name</label>
-      <input type="text" class="form-control" id="lastname" placeholder="Last Name"  required>
-    </div>
-     <div class="form-group col-auto">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Email"  required>
-    </div>
-      <div class="form-group col-auto">
-      <label for="contactNumber">Contact Number</label>
-      <input type="text" class="form-control" id="number" placeholder="Contact Number"  required>
-    </div>
 
-  <div class="md-form">
-  <i class="fas fa-pencil-alt prefix"></i>
-  <textarea id="form10" class="md-textarea form-control" rows="3" placeholder="Message"  required></textarea>
+<main class="container">
+  <div class="row" style="height:100px;">
+		<div class="col"></div>
+		<div class="col"></div>
+		<div class="w-100"></div>
+		<div class="col"></div>
+		<div class="col"></div>
+	  </div>
+	<div class="row justify-content-center">
+		<div class="col-md-4">
+      <form   action="/home" method="get">
+        <div class="form-row">
+          <div class="form-group col-auto">
+            <label for="lastname" class="text-light">First Name</label>
+            <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+          </div>
+          <div class="form-group col-auto">
+            <label for="firstname"  class="text-light">Last Name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Last Name"  required>
+          </div>
+           <div class="form-group col-auto">
+            <label for="inputEmail4"  class="text-light">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email"  required>
+          </div>
+            <div class="form-group col-auto">
+            <label for="contactNumber"  class="text-light">Contact Number</label>
+            <input type="text" class="form-control" id="number" placeholder="Contact Number"  required>
+          </div>
+      
+        <div class="md-form">
+          <label for="contactNumber"  class="text-light">Contact Number</label>
+        <textarea id="form10" class="md-textarea form-control" rows="3" placeholder="Message"  required></textarea>
+      
+      </div>
+        </div>
+      
+        
+        </br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
 
-</div>
-  </div>
 
-  
-  </br>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+		  </div>
+	  
+	</div>
+  </main>
 
-			</div>
-    <%- include('footer.ejs') %>

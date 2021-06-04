@@ -5,26 +5,26 @@ export default router;
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('index', { title: 'Express' ,page:'main'});
 });
 
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Home' });
+  res.render('index', { title: 'Home',page:'main' });
 })
 
-router.get('/aboutus', function(req, res, next) {
-  res.render('aboutus', { title: 'About Us' });
+router.get('/about', function(req, res, next) {
+  res.render('index', { title: 'About Us',page:'about' });
 })
-router.get('/projects', function(req, res, next) {
-  res.render('projects', { title: 'Projects' });
+router.get('/project', function(req, res, next) {
+  res.render('index', { title: 'Projects',page:'project' });
 })
 
-router.get('/services', function(req, res, next) {
-  res.render('services', { title: 'Services' });
+router.get('/service', function(req, res, next) {
+  res.render('index', { title: 'Services',page:'service' });
 })
 
 router.get('/contact', function(req, res, next) {
-  res.render('contact', { title: 'Contact' });
+  res.render('index', { title: 'Contact',page:'contact' });
 })
 
 //module.exports = router;

@@ -1,0 +1,37 @@
+<%- include('header.ejs') %>
+    	<div class="description2" style="align-content: center;">
+		<!--Section: Contact v.2-->
+    <h1>Contact</h1>
+<form   action="/home" method="get">
+  <div class="form-row">
+    <div class="form-group col-auto">
+      <label for="lastname">First Name</label>
+      <input type="text" class="form-control" id="firstname" placeholder="First Name" required>
+    </div>
+    <div class="form-group col-auto">
+      <label for="firstname">Last Name</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Last Name"  required>
+    </div>
+     <div class="form-group col-auto">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email"  required>
+    </div>
+      <div class="form-group col-auto">
+      <label for="contactNumber">Contact Number</label>
+      <input type="text" class="form-control" id="number" placeholder="Contact Number"  required>
+    </div>
+
+  <div class="md-form">
+  <i class="fas fa-pencil-alt prefix"></i>
+  <textarea id="form10" class="md-textarea form-control" rows="3" placeholder="Message"  required></textarea>
+
+</div>
+  </div>
+
+  
+  </br>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+			</div>
+    <%- include('footer.ejs') %>
