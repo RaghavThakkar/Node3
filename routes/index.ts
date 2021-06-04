@@ -16,7 +16,15 @@ router.get('/aboutus', function(req, res, next) {
   res.render('aboutus', { title: 'About Us' });
 })
 router.get('/projects', function(req, res, next) {
-  res.render('project', { title: 'Projects' });
+  res.render('projects', { title: 'Projects' });
+})
+
+router.get('/services', function(req, res, next) {
+  res.render('services', { title: 'Services' });
+})
+
+router.get('/contact', function(req, res, next) {
+  res.render('contact', { title: 'Contact' });
 })
 
 //module.exports = router;
